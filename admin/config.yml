@@ -17,6 +17,8 @@ collections: # A list of collections the CMS should be able to edit
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
@@ -24,8 +26,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "author"
         widget: "select"
         options:
-          - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
-          - { label: "John Doe", value: "john_doe" }
+          - { label: "Eric Clark", value: "eric_clark" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -37,6 +38,8 @@ collections: # A list of collections the CMS should be able to edit
     sort: "title:asc"
     create: false
     slug: "{{slug}}"
+    editor:
+      preview: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}

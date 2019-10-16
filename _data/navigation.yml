@@ -3,8 +3,8 @@
 - text: Home
   url: /
 - text: About
-  url: /about
+  url: /about/
 - text: Contact
-  url: /contact
+  url: /contact/
 - text: Blog
-  url: /blog
+  url: /blog/
