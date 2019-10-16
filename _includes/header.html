@@ -1,9 +1,17 @@
 <header>
 
-  <h1>
+  {% if page.url == "/" %}
+  <h1 class="site-title">
+  {% else %}
+    <div class="site-title">
+  {% endif %}
     <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  </h1>
 
+  {% if page.url == "/" %}
+  </h1>
+  {% else %}
+  </div>
+  {% endif %}
   <nav>
     {% include navigation.html navigation=site.data.navigation %}
   </nav>
