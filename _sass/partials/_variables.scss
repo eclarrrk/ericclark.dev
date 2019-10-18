@@ -1,21 +1,35 @@
 // site colours
-$text-color: rgb(40,40,40);
+$text-color: rgb(40, 40, 40);
 $text-color-negative: $text-color;
-$brand-color: #87e0c4;
-$link-color: #1ba278;
-$link-hover-color: #12926a;
-$grey-bg-color: rgb(243,243,243);
-$hairline-color: rgb(230,230,230);
-$selection-bg-color: #dafff4;
+$color__primary: #87e0c4;
+$color__secondary: #6826a5;
+$color__link:#0b7d5a;
+$link-hover-color: darken($color__link, 10%);
+$color__gray: rgb(243, 243, 243);
+$color__hairline: rgb(230, 230, 230);
+$color__selection-bg:rgba($color__secondary, .2);
 
 // typographic defaults
-$base-font: 'IBM Plex Sans', system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;
-$secondary-font: 'DM Serif Text', Gerogia, serif;
-$code-font: Courier, monospace;
-$base-font-size: 62.5%;
-$base-font-weight: 300;
-$bold-font-weight: 600;
-$base-line-height: 1.5;
+$font__main: 'IBM Plex Sans',
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+Droid Sans,
+Helvetica Neue;
+$font__secondary: 'DM Serif Text',
+Georgia,
+serif;
+$font__code: Courier,
+monospace;
+$font__size: 62.5%;
+$font__weight: 400;
+$font__weight--bold: 600;
+$base-line-height: 1.66;
 
 // viewport breakpoints
 $screen-xs-min: 480px;

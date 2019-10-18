@@ -2,7 +2,7 @@
 
 // A basic button
 @mixin button($btn-bg, $btn-text) {
-  font-weight: $bold-font-weight;
+  font-weight: $font__weight--bold;
   padding: 2rem;
 	line-height: $base-line-height;
 	color: $btn-text;
