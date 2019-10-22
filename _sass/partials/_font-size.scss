@@ -1,15 +1,15 @@
 @mixin font-size($sizeValueSmall, $sizeValueLarge) {
 
-    $fontSizeSmall: $sizeValueSmall * 16;
-    $fontSizeLarge: $sizeValueLarge * 16;
+    $fontSizeSmall: $sizeValueSmall * 18;
+    $fontSizeLarge: $sizeValueLarge * 18;
 
-    font-size: ($sizeValueSmall * 16) * 1px;
+    font-size: ($sizeValueSmall * 18) * 1px;
     font-size: $sizeValueSmall * 1rem;
-    @media (min-width: 320px) {
+    @media screen and (min-width: 320px) {
         font-size: calc( #{$fontSizeSmall}px + ( #{$fontSizeLarge} - #{$fontSizeSmall}) * ( (100vw - 320px) / ( 1024 - 320) ));
     }
-    @include media(md) {
-        font-size: ($sizeValueLarge * 16) * 1px;
+    @media screen and (min-width: 1024px) {
+        font-size: ($sizeValueLarge * 18) * 1px;
         font-size: $sizeValueLarge * 1rem;
     }
 }

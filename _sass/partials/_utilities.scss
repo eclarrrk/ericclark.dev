@@ -108,7 +108,7 @@ select,
 label,
 a {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	outline: none;
+	outline-color: $color__secondary;
 }
 
 ul,
@@ -140,7 +140,7 @@ pre {
 }
 
 code {
-	background-color: $color__gray;
+	background-color: rgba($color__primary, .2);
 	padding: 0.2rem 0.4rem;
 }
 

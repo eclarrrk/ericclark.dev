@@ -1,8 +1,41 @@
 <footer>
 
   <small>&copy; <span id="year">2019</span> Eric Clark</small>
+  <label for="toggle">
+    <span>Dark mode</span>
+    <input id="toggle" type="checkbox">
+    <span aria-hidden="true">&#9788; &#9789;</span>
+</label>
 
 </footer>
+
 <script>
   document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<script>
+// borrowed from sarasoueidan.com
+(function () {
+  var toggle = document.querySelector('#toggle'),
+      root = document.documentElement,
+      currentTheme = localStorage.getItem('theme') || "dark";
+
+  if (currentTheme == "light") toggle.removeAttribute('checked');
+  else toggle.checked = "true";
+
+  root.setAttribute('data-theme', currentTheme);
+
+  toggle.addEventListener('change', toggleTheme, false);
+
+  function toggleTheme(e) {
+      if (this.checked) {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+      }
+      else {
+          root.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+      }
+  }
+})();
 </script>
