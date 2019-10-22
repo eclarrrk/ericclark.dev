@@ -2,27 +2,30 @@
 layout: default
 ---
 <main class="main--full">
+  <div class="main__content">
 
-<h2 class="h1">{{ page.title }}</h2>
+    <h2 class="h1">{{ page.title }}</h2>
 
-{% include page-intro.html %}
+    {% include page-intro.html %}
 
-<div class="portrait">
-  <img src="/assets/img/uploads/eric-clark-photo.jpg" alt="A portrait of Eric Clark">
-</div>
+    <div class="portrait">
+      <!-- <img src="/assets/img/uploads/eric-clark-photo.jpg" alt="A portrait of Eric Clark"> -->
+    </div>
 
 
-{{ content }}
+    {{ content }}
 
-<h3>Recent writing</h3>
+    <h3>Recent writing</h3>
 
-<ul>
-  {% for post in site.posts limit:3 %}
-  <li>
-    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-  </li>
-  {% endfor %}
-</ul>
-<a href="/blog/">View all writing</a>
-
+    <ul>
+      {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url }}">
+          <h4>{{ post.title }}</h4>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/blog/">View all writing</a>
+  </div>
 </main>

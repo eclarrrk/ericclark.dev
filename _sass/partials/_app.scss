@@ -9,7 +9,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;  
+  min-height: 100vh;
   background-color: #e9f5f2;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1rem, 1fr) [full-end];
@@ -20,10 +20,11 @@ body {
 header {
   grid-column: main;
   padding: 2em 0;
+
   @media screen and (min-width: $screen-xs-min) {
     display: grid;
-    grid-template-columns:auto 1fr;
-    padding: 1rem 0;  
+    grid-template-columns: auto 1fr;
+    padding: 1rem 0;
   }
 }
 
@@ -51,9 +52,10 @@ header {
 }
 
 // main menu, is a grid item
-header>nav { 
+header>nav {
   grid-column: 2/3;
   padding-top: .5em;
+
   @media screen and (min-width: $screen-xs-min) {
     float: right;
     justify-self: end;
@@ -62,6 +64,7 @@ header>nav {
 
   ul {
     display: flex;
+
     @media screen and (min-width: $screen-xs-min) {
       justify-content: flex-end;
       height: 100%;
@@ -72,7 +75,10 @@ header>nav {
     li {
       margin-right: 2rem;
       display: inline-block;
-      + li a {margin-left: 1.5rem;}
+
+      +li a {
+        margin-left: 1.5rem;
+      }
 
       @media screen and (min-width: $screen-xs-min) {
         margin-right: 0;
@@ -101,23 +107,32 @@ header>nav {
 }
 
 // our main content wrapper, the width scales with font size
-.main--full {
-  grid-column: full;}
-.main--container {
-  grid-column: main;}
+
 main {
   width: 100%;
-  grid-template-columns:
-    [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 52rem) [main-end] minmax(1rem, 1fr) [full-end];
-  max-width: 52rem;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
 
   @media screen and (min-width: $screen-md-min) {
     align-content: start;
   }
+}
+
+.main--full {
+  grid-column: full;
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 52rem) [main-end] minmax(1rem, 1fr) [full-end];
+  max-width: 52rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main--container {
+  grid-column: main;
+}
+
+.main--full .main__content {
+  grid-column: main;
 }
 
 article {
@@ -128,7 +143,7 @@ article {
 // float, inline-block, table properties are already ignored by CSS Grid
 @supports (display: grid) {
   main {
-    width: auto;
+    // width: 100%;
     max-width: none;
   }
 }
@@ -201,7 +216,8 @@ footer {
   display: grid;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1rem, 1fr) [full-end];
-    padding: 2em 0;
+  padding: 2em 0;
+
   >small {
     grid-column: main;
   }
