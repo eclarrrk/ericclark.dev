@@ -16,14 +16,11 @@ layout: default
       <time datetime="{{ post.date }}">
         <small>
           <strong>{{ post.date | date_to_string }}</strong>
-          <!-- {% if author %}
-          by {{ author.name }}
-          {% endif %} -->
         </small>
       </time>
-      <small>
-      {{ post.excerpt | strip_newlines | truncate: 180 }}
-    </small>
+      <p class="small">
+        {{ post.excerpt | strip_newlines | strip_html | truncate: 180 }}
+      </p>
     </li>
     {% endfor %}
   </ul>
