@@ -4,9 +4,7 @@
 // CSS Grid is used for the layout with fallbacks for less capable browsers
 // declared beforehand, and a @supports feature query to reset fallbacks when
 // necessary. https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks
-:root {
-  @include var(background-color, color__primary--ll);
-}
+
 body {
   height: 100vh;
   display: grid;
@@ -14,7 +12,7 @@ body {
   min-height: 100vh;
   @include var(background-color, color__primary--ll);
   grid-template-columns:
-    [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1rem, 1fr) [full-end];
+    [full-start] minmax(1.5rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1.5rem, 1fr) [full-end];
 }
 
 // header, the first grid row
@@ -75,11 +73,10 @@ header>nav {
     }
 
     li {
-      margin-right: 2rem;
       display: inline-block;
 
       +li a {
-        margin-left: 1.5rem;
+        margin-left: 2em;
       }
 
       @media screen and (min-width: $screen-xs-min) {
@@ -124,7 +121,7 @@ main {
 .main--full {
   grid-column: full;
   display: grid;
-  grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 52rem) [main-end] minmax(1rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.5rem, 1fr) [main-start] minmax(0, 52rem) [main-end] minmax(1.5rem, 1fr) [full-end];
   max-width: 52rem;
   margin-right: auto;
   margin-left: auto;
@@ -219,7 +216,7 @@ footer {
   grid-column: full;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1rem, 1fr) [full-end];
+    [full-start] minmax(1.5rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1.5rem, 1fr) [full-end];
   padding: 2em 0;
 
   >small {

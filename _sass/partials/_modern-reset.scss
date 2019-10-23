@@ -9,6 +9,7 @@
 ul[class],
 ol[class] {
   padding: 0;
+  margin: 0;
 }
 
 /* Remove default margin */
@@ -41,11 +42,15 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
+
   &>li:before {
-    content: "\200B"; /* 1 */
-    position: absolute; /* 2 */
+    content: "\200B";
+    /* 1 */
+    position: absolute;
+    /* 2 */
   }
 }
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -58,7 +63,7 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 

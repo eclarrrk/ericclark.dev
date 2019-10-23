@@ -3,9 +3,12 @@ layout: post
 title:  "How I built this site"
 date:   2019-02-28 08:46:24 -0500
 categories: css, html
-permalink: /writing/:title/
 ---
-## What i wanted from a website
+## Holy crap this website is finally live
+
+This is the third or fourth version of my website I've tried to launch. I do it all the time at work, but I'm my own worst client. Each time I started building a site, I got caught up on design or images and kinda forgot to create actual content.
+
+## What I wanted from a website
 - Ease of writing
 - Simple setup
 - Static, ideally
