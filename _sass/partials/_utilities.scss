@@ -108,7 +108,8 @@ select,
 label,
 a {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	outline-color: $color__secondary;
+	// outline-color: $color__secondary;
+	@include var(outline-color, color__secondary);
 }
 
 ul,
@@ -116,7 +117,20 @@ ol,
 dl {
 	list-style: none;
 }
-
+ul[class],
+ol[class] {
+  list-style: none;
+  &>li:before {
+    content: "\200B"; /* 1 */
+    position: absolute; /* 2 */
+  }
+}
+ol,ul {
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+ol {list-style: decimel;}
+ul {list-style: disc;}
 em {
 	font-style: italic;
 }
@@ -140,20 +154,21 @@ pre {
 }
 
 code {
-	background-color: rgba($color__primary, .2);
+	@include var(background-color, color__primary--l);
 	padding: 0.2rem 0.4rem;
 }
 
 ::selection {
-	background-color: $color__selection-bg;
+	@include var(background-color, color__selection-bg);
 }
 
 input,
 textarea {
-	border: 0.05em solid $color__hairline;
+	border: 0.05em solid;
+	@include var(border-color, color__hairline);
 
 	&:focus {
-		border: 0.05em solid $text-color;
+		border: 0.05em solid $color__text;
 	}
 }
 
@@ -164,5 +179,5 @@ textarea {
 }
 
 button {
-	@include button($color__link, $text-color-negative);
+	@include button($color__link, $color__text-negative);
 }

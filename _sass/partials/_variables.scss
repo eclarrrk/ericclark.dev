@@ -1,16 +1,49 @@
 // site colours
-$text-color: rgb(40, 40, 40);
-$text-color-negative: $text-color;
+$color__text: rgb(40, 40, 40);
+$color__text-negative: $color__text;
 $color__primary: #87e0c4;
 $color__secondary: #6826a5;
 $color__link:#0b7d5a;
-$link-hover-color: darken($color__link, 10%);
+$color__link--hover: darken($color__link, 10%);
 $color__gray: rgb(243, 243, 243);
 $color__hairline: rgb(230, 230, 230);
 $color__selection-bg:rgba($color__secondary, .2);
 
+///
+$vars: (
+    color__text: #282828,
+    color__primary: #87e0c4,
+    color__primary--ll: #e9f5f2,
+    color__primary--l: #d5f1e9,
+    color__primary--d: #1b674f,
+    color__secondary: #6826a5,
+    color__link: #0b7d5a,
+    color__link--hover: #074e38,
+    color__gray: rgb(243, 243, 243),
+    color__hairline: rgb(230, 230, 230),
+    color__selection-bg: #cfcde3
+);
+
+:root {
+  --color__text: #{map-get($vars, color__text)};
+  --color__primary: #{map-get($vars, color__primary)};
+  --color__primary--ll: #{map-get($vars,  color__primary--ll)};
+  --color__primary--l: #{map-get($vars, color__primary--l)};
+  --color__primary--d: #{map-get($vars, color__primary--d)};
+  --color__secondary: #{map-get($vars, color__secondary)};
+  --color__link: #{map-get($vars, color__link)};
+  --color__link--hover: #{map-get($vars, color__link--hover)};
+  --color__gray: #{map-get($vars, color__gray)};
+  --color__hairline: #{map-get($vars, color__hairline)};
+  --color__selection-bg: #{map-get($vars, color__selection-bg)};
+}
+
+@mixin var($property, $varName) {
+  #{$property}: map-get($vars, $varName);
+  #{$property}: var(--#{$varName});
+}
 // typographic defaults
-$font__main: 'IBM Plex Sans',
+$font__primary: 'IBM Plex Sans',
 system-ui,
 -apple-system,
 BlinkMacSystemFont,

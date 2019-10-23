@@ -1,12 +1,13 @@
 <footer>
 
   <small>&copy; <span id="year">2019</span> Eric Clark</small>
-  <label for="toggle">
-    <span>Dark mode</span>
-    <input id="toggle" type="checkbox">
-    <span aria-hidden="true">&#9788; &#9789;</span>
-</label>
-
+  <div class="theme-toggle">
+    <label for="toggle">
+      <span>Dark mode</span>
+      <input id="toggle" type="checkbox">
+      <span class="theme-toggle__switch" aria-hidden="true">&#9788; &#9789;</span>
+    </label>
+  </div>
 </footer>
 
 <script>
@@ -14,28 +15,28 @@
 </script>
 
 <script>
-// borrowed from sarasoueidan.com
+/* borrowed from sarasoueidan.com */
 (function () {
-  var toggle = document.querySelector('#toggle'),
-      root = document.documentElement,
-      currentTheme = localStorage.getItem('theme') || "dark";
+        var toggler = document.querySelector('#toggle'),
+            root = document.documentElement,
+            currentTheme = localStorage.getItem('theme') || "dark";
 
-  if (currentTheme == "light") toggle.removeAttribute('checked');
-  else toggle.checked = "true";
+        if (currentTheme == "light") toggler.removeAttribute('checked');
+        else toggler.checked = "true";
 
-  root.setAttribute('data-theme', currentTheme);
+        root.setAttribute('data-theme', currentTheme);
 
-  toggle.addEventListener('change', toggleTheme, false);
+        toggler.addEventListener('change', toggleTheme, false);
 
-  function toggleTheme(e) {
-      if (this.checked) {
-          root.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-      }
-      else {
-          root.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-      }
-  }
-})();
+        function toggleTheme(e) {
+            if (this.checked) {
+                root.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                root.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+    })();
 </script>

@@ -57,6 +57,3 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8)
   tzinfo-data
-
-BUNDLED WITH
-   2.0.2
