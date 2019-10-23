@@ -1,6 +1,9 @@
-:root[data-theme="dark"] {
-
-}
 .theme-toggle {
-    grid-column: main;
+    display: none;    grid-column: main;
 }
+@supports (color: var(--color__primary)) {
+    .theme-toggle {
+        display: block;
+    }
+}
+.theme-toggle__switch {}
