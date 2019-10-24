@@ -8,24 +8,26 @@ layout: default
 
     {% include page-intro.html %}
 
-    <figure class="portrait">
-      <!-- <img src="/assets/img/uploads/eric-clark-photo.jpg" alt="A portrait of Eric Clark"> -->
-    </figure>
+    <section>
+      {{ content }}
+    </section>
+    <section>
+      <h3 class="h5">Recent writing</h3>
 
+      <ul class="post-list post-list--small">
+        {% for post in site.posts limit:3 %}
+        <li>
+          <time class="post-list__date" datetime="{{ post.date }}">
+            {{ post.date | date_to_string }}
+          </time>
+          <a href="{{ post.url }}">
+            <h4>{{ post.title }}</h4>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="/blog/">View all posts</a>
 
-    {{ content }}
-
-    <h3>Recent writing</h3>
-
-    <ul>
-      {% for post in site.posts limit:3 %}
-      <li>
-        <a href="{{ post.url }}">
-          <h4>{{ post.title }}</h4>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    <a href="/blog/">View all writing</a>
+    </section>
   </div>
 </main>

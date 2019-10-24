@@ -1,24 +1,32 @@
 <footer>
 
   <small>&copy; <span id="year">2019</span> Eric Clark</small>
-  <div class="theme-toggle">
-    <label for="toggle">
-      <span>Dark mode</span>
+  <div class="theme-toggle__wrapper">
+    <label class="theme-toggle" for="toggle">
+      <div class="screen-reader-text">
+        Switch to 
+        <span class="theme-toggle__label--dark">dark</span>
+        <span class="theme-toggle__label--light">light</span>
+        theme
+      </div>
       <input id="toggle" type="checkbox">
-      <span class="theme-toggle__switch" aria-hidden="true">&#9788; &#9789;</span>
+      <span class="theme-toggle__switch" aria-hidden="true">
+        <i class="icon--moon">&#9789;</i><i class="icon--sun">&#9788;</i>
+      </span>
     </label>
   </div>
 </footer>
+<div id="dark-mode-detector" role="presentation"></div>
 
 <script>
   document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 <script>
-/* borrowed from sarasoueidan.com */
 (function () {
         var toggler = document.querySelector('#toggle'),
             root = document.documentElement,
+            detector = document.querySelector('#dark-mode-detector'),
             currentTheme = localStorage.getItem('theme') || "dark";
 
         if (currentTheme == "light") toggler.removeAttribute('checked');

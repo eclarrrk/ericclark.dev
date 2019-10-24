@@ -1,0 +1,20 @@
+.post-list {}
+.post-list li {
+}
+.post-list__date {
+    font-size: .75rem;
+    padding-bottom: .33em;
+}
+.post-list__title {}
+
+ul.post-list--small {
+    @media (min-width: $screen-xs-min) {
+        display: flex;
+        gap: 1em;
+        margin: 0 -.5em;
+        li {
+            flex: 1;
+            padding: 0 .5em;
+        }
+    }
+}

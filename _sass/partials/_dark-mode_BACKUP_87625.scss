@@ -1,7 +1,11 @@
 // dark mode color values stored in variables.scss
+<<<<<<< HEAD
+.theme-toggle {
+=======
 
 
 .theme-toggle__wrapper {
+>>>>>>> 4d0ffe9d1b2f10433bf37e17b5a6e2c9b516828f
     display: none;
     align-items: center;
     grid-column: main;
@@ -83,6 +87,16 @@ input:checked + .theme-toggle__switch:before {
     }
 }
 
+<<<<<<< HEAD
+.theme-toggle__switch {}
+
+:root[data-theme="dark"] {
+    --image-filter: grayscale(50%);
+
+    img:not([src*=".svg"]) {
+        filter: var(--image-filter);
+    }
+=======
 
 html[data-theme="dark"] {
     .theme-toggle__label--dark {display: none;}
@@ -91,4 +105,5 @@ html[data-theme="dark"] {
 html[data-theme="light"] {
     .theme-toggle__label--dark {display: inline;}
     .theme-toggle__label--light {display: none;};}
+>>>>>>> 4d0ffe9d1b2f10433bf37e17b5a6e2c9b516828f
 }
