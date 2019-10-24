@@ -112,11 +112,6 @@ a {
 	@include var(outline-color, color__secondary);
 }
 
-ul,
-ol,
-dl {
-	list-style: none;
-}
 ul[class],
 ol[class] {
   list-style: none;
@@ -129,8 +124,6 @@ ol,ul {
   margin-left: 1rem;
   padding-left: 1rem;
 }
-ol {list-style: decimel;}
-ul {list-style: disc;}
 em {
 	font-style: italic;
 }
@@ -181,3 +174,16 @@ textarea {
 button {
 	@include button($color__link, $color__text-negative);
 }
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+  }
