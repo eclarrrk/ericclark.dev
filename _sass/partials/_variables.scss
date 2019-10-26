@@ -23,18 +23,6 @@ $vars: ( //
   color__hairline: rgb(230, 230, 230),
   color__selection-bg: #cfcde3);
 
-$vars--dark: ( //
-  color__text: #d6fff2,
-  color__primary:#87e0c4,
-  color__primary--ll: #273833,
-  color__primary--l: #14231f,
-  color__primary--d: #1b674f,
-  color__secondary: #6826a5,
-  color__link: #fff,
-  color__link--hover: #87e0c4,
-  color__gray: rgb(243, 243, 243),
-  color__hairline: rgb(230, 230, 230),
-  color__selection-bg: #cfcde3);
 
 
 
@@ -52,6 +40,19 @@ html {
   --color__selection-bg: #{map-get($vars, color__selection-bg)};
 }
 
+$vars--dark: ( //
+  color__text: #d6fff2,
+  color__primary:#87e0c4,
+  color__primary--ll: #273833,
+  color__primary--l: #14231f,
+  color__primary--d: #1b674f,
+  color__secondary: #6826a5,
+  color__link: #fff,
+  color__link--hover: #87e0c4,
+  color__gray: rgb(243, 243, 243),
+  color__hairline: rgb(230, 230, 230),
+  color__selection-bg: #cfcde3);
+
 html[data-theme="dark"] {
   --color__text: #{map-get($vars--dark, color__text)};
   --color__primary: #{map-get($vars--dark, color__primary)};
@@ -65,6 +66,8 @@ html[data-theme="dark"] {
   --color__hairline: #{map-get($vars--dark, color__hairline)};
   --color__selection-bg: #{map-get($vars--dark, color__selection-bg)};
 }
+
+@media not all and (prefers-color-scheme) {}
 
 @mixin var($property, $varName) {
   #{$property}: map-get($vars, $varName);

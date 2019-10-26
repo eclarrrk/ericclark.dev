@@ -1,0 +1,14 @@
+// dark mode color values stored in variables.scss
+
+.theme-toggle {
+    display: none;
+    grid-column: main;
+}
+
+@supports (color: var(--color__primary)) {
+    .theme-toggle {
+        display: block;
+    }
+}
+
+.theme-toggle__switch {}
