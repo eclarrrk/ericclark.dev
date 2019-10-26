@@ -34,8 +34,8 @@ netlifycms: true
 analytics: false
 
 
-
 publish_mode: editorial_workflow
+show_preview_links: true
 
 # Compress CSS
 sass:
