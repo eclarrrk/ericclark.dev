@@ -22,6 +22,8 @@ Using the mixin on the body means all type sized with `em` units will grow and s
 
 ### Headings
 
+Lorem ipsum dolor sit amet.     
+
 
 
 ### Spacing
