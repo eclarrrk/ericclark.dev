@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   @include var(background-color, color__primary--ll);
   grid-template-columns:
-    [full-start] minmax(1.5rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1.5rem, 1fr) [full-end];
+    [full-start] minmax(1.5rem, 1fr) [main-start] minmax(0, 40rem) [main-end] minmax(1.5rem, 1fr) [full-end];
 }
 
 // header, the first grid row
@@ -93,9 +93,9 @@ header>nav {
           padding: .25rem;
         }
 
-        &[data-current="current page"] {
+        // &[data-current="current page"] {
           // you can add an active nav item style here
-        }
+        // }
       }
 
       a:hover {
