@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: Home
 permalink: /
 section: home
 intro_paragraph: Eric is a front-end designer and developer
