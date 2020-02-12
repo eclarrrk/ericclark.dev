@@ -36,13 +36,75 @@ You will need to navigate to the folder that contains the images you want to man
 ### Rotate a batch of images 90 degrees clock-wise
 `sips -r 90 *`
 
+### Convert an image from one file format to another
+`sips -s format jpeg -s formatOptions 80 "image.tiff" --out "image.jpg"`
 
-    So we first grab all RAW files in a folder,
-    We convert them to jpeg (or any other format),
+So we first grab all RAW files in a folder, then we convert them to jpeg (or any other format), and we output them somewhere else.
 
-    And we output them somewhere else.
+`for i in *.CR2; do sips -s format jpeg $i --out "${i%.*}.jpg"; done`
 
-    for i in *.CR2; do sips -s format jpeg $i --out "${i%.*}.jpg"; done
+## More SIPS
+
+For a full list of SIPS commands, enter `sips --help` into your terminal and get a full list of parameters.
+
+Here it is in full:
+```
+sips 10.4.4 - scriptable image processing system.
+This tool is used to query or modify raster image files and ColorSync ICC profiles.
+Its functionality can also be used through the "Image Events" AppleScript suite.
+
+  Usages:
+    sips [-h, --help] 
+    sips [-H, --helpProperties] 
+
+    sips [image-query-functions] imagefile ... 
+
+    sips [profile-query-functions] profile ... 
+
+    sips [image modification functions] imagefile ... 
+         [--out result-file-or-dir] 
+
+    sips [profile modification functions] profile ... 
+         [--out result-file-or-dir] 
+
+
+  Profile query functions: 
+    -g, --getProperty key 
+    -X, --extractTag tag tagFile 
+    -v, --verify 
+
+  Image query functions: 
+    -g, --getProperty key 
+    -x, --extractProfile profile 
+
+  Profile modification functions: 
+    -s, --setProperty key value 
+    -d, --deleteProperty key 
+        --deleteTag tag 
+        --copyTag srcTag dstTag 
+        --loadTag tag tagFile 
+        --repair 
+
+  Image modification functions: 
+    -s, --setProperty key value 
+    -d, --deleteProperty key 
+    -e, --embedProfile profile 
+    -E, --embedProfileIfNone profile 
+    -m, --matchTo profile 
+    -M, --matchToWithIntent profile intent 
+        --deleteColorManagementProperties 
+    -r, --rotate degreesCW 
+    -f, --flip horizontal|vertical 
+    -c, --cropToHeightWidth pixelsH pixelsW 
+    -p, --padToHeightWidth pixelsH pixelsW 
+        --padColor hexcolor 
+    -z, --resampleHeightWidth pixelsH pixelsW 
+        --resampleWidth pixelsW 
+        --resampleHeight pixelsH 
+    -Z, --resampleHeightWidthMax pixelsWH 
+    -i, --addIcon 
+    -o, --optimizeColorForSharing ```
+
 
 ---
 
