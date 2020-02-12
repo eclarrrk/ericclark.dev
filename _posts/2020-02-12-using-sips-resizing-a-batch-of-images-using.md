@@ -6,16 +6,19 @@ date: '2020-02-11 21:30:49'
 intro_paragraph: >-
   I can't count the number of times I'm given a bunch of images that are way too
   large for the web. I could run a PhotoShop action to handle it, but that would
-  require actually opening PhotoShop :(
+  require actually opening the slowest program my computer has to offer.
 ---
-
-- In searching for a better way, I came across SIPS, a MAC command line tool. And even though I can't find the official SIPS documentation anywhere (any help there is appreciated) I've collected what I was able to find because some of these are extremely helpful.
+In searching for a better way, I came across SIPS (scriptable image processing system), a MAC command line tool for processing images. I've collected what I was able to find because some of these are extremely helpful.
 
 ## Running the SIPS commands
 
 To use SIPS you will need to open a terminal application on your MAC. You can find the Terminal app in Applications > Utilities.
 
 You will need to navigate to the folder that contains the images you want to manipulate. As an extra precaution, I usually copy the images into a folder I created for batch resizing as to keep the higher resolution versions in case I mess up and overwrite the originals with a lesser version.
+
+## Helpful SIPS commands
+
+I've collected a few commands that can solve common image resizing problems, or have been particularly helpful to me.
 
 ### Resize an image by max width
 
