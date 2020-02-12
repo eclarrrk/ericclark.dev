@@ -5,7 +5,9 @@
     font-size: .75rem;
     padding-bottom: .33em;
 }
-.post-list__title {}
+.post-list__title {
+    padding-top: 0;
+}
 
 ul.post-list--small {
     @media (min-width: $screen-xs-min) {
