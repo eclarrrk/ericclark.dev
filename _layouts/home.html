@@ -11,15 +11,17 @@ layout: default
     <section>
       <h3 class="h5">Recent posts</h3>
 
-      <ul class="post-list post-list--small">
+      <ul class="post-list">
         {% for post in site.posts limit:3 %}
         <li>
           <time class="post-list__date" datetime="{{ post.date }}">
             {{ post.date | date_to_string }}
           </time>
-          <a href="{{ post.url }}">
-            <h4>{{ post.title }}</h4>
-          </a>
+          
+            <h4>
+              <a href="{{ post.url }}"></a>{{ post.title }}</a>
+            </h4>
+          
         </li>
         {% endfor %}
       </ul>
