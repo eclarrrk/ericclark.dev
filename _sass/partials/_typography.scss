@@ -71,6 +71,7 @@ h6,
   font-family: $font__secondary;
   font-weight: 400;
   line-height: 1.2;
+  position: relative;
 
   *+& {
     padding-top: 2rem;
@@ -113,7 +114,6 @@ h6,
 
 code {
   font-family: $font__code;
-  @include var(color, color__primary--d);
 }
 
 strong {
@@ -147,4 +147,20 @@ a:active {
   text-decoration: none;
   border: 0;
   @include var(color, color__link--hover);
+}
+.heading-anchor {
+  position: absolute;
+  padding: .33rem;
+  right: 100%;
+  top: 2rem;
+  font-size: 66%;
+  border: 0;
+  font-family: $font--primary;
+  color: inherit;
+  opacity: .6;
+  &:hover,
+  &:focus {
+    color: inherit;
+    opacity: .9;
+  }
 }
