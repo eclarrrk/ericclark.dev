@@ -9,10 +9,7 @@ layout: default
     {% include page-intro.html %}
 
     <section>
-      {{ content }}
-    </section>
-    <section>
-      <h3 class="h5">Recent writing</h3>
+      <h3 class="h5">Recent posts</h3>
 
       <ul class="post-list post-list--small">
         {% for post in site.posts limit:3 %}
@@ -28,6 +25,10 @@ layout: default
       </ul>
       <a href="/blog/">View all posts</a>
 
+    </section>
+
+    <section>
+      {{ content }}
     </section>
   </div>
 </main>

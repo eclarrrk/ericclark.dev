@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Welcome
+title: Hello! <br>I'm Eric.
 permalink: /
 section: home
-intro_paragraph: Eric is a front-end designer and developer
+intro_paragraph: I'm a front-end designer and developer in Lancaster, PA currently working as the Digital Director at <a href="https://infantree.com" target="_blank" rel="noopener">Infantree</a>.
 ---
 ## I plan, design, and build websites.
 

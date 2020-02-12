@@ -6,12 +6,7 @@ layout: default
 
   {% include page-intro.html %}
   
-  {% comment %}
   {{ content }}
-  {% endcomment %}
-
-  {% include anchor_headings.html html=content %}
-
 
   <ul class="post-list">
     {% for post in site.posts %}
