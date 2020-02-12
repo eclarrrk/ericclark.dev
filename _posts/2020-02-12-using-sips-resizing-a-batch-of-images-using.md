@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using SIPS Resizing a batch of images using
+title: Using SIPS to batch resize images
 author: eric_clark
 date: '2020-02-11 21:30:49'
 intro_paragraph: >-
