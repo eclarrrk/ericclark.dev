@@ -3,7 +3,7 @@ $color__text: rgb(40, 40, 40);
 $color__text-negative: $color__text;
 $color__primary: #87e0c4;
 $color__secondary: #6826a5;
-$color__link:#0b7d5a;
+$color__link:salmon;
 $color__link--hover: darken($color__link, 10%);
 $color__gray: rgb(243, 243, 243);
 $color__hairline: rgb(230, 230, 230);
@@ -23,9 +23,6 @@ $vars: ( //
   color__hairline: rgb(230, 230, 230),
   color__selection-bg: #cfcde3);
 
-
-
-
 html {
   --color__text: #{map-get($vars, color__text)};
   --color__primary: #{map-get($vars, color__primary)};
@@ -40,6 +37,7 @@ html {
   --color__selection-bg: #{map-get($vars, color__selection-bg)};
 }
 
+//Dark Mode
 $vars--dark: ( //
   color__text: #d6fff2,
   color__primary:#87e0c4,
@@ -47,8 +45,8 @@ $vars--dark: ( //
   color__primary--l: #14231f,
   color__primary--d: #1b674f,
   color__secondary: #6826a5,
-  color__link: #fff,
-  color__link--hover: #87e0c4,
+  color__link: pink,
+  color__link--hover: darken(pink, 10%),
   color__gray: rgb(243, 243, 243),
   color__hairline: rgb(230, 230, 230),
   color__selection-bg: #cfcde3);
