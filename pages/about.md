@@ -1,9 +1,7 @@
 ---
 layout: page
 title: About
-headline: >-
-  I'm a Front-End Web Designer and Developer <small><br>and I think I'm pretty
-  good at building websites</small>
+headline: I'm a Front-End Web Designer and Developer
 permalink: /about/
 section: about
 intro_paragraph: >-
