@@ -1,29 +1,28 @@
 ---
 layout: page
 title: About
-headline: About Eric
+headline: >-
+  I'm a Front-End Web Designer and Developer and I think I'm pretty good at
+  building websites
 permalink: /about/
 section: about
 intro_paragraph: >-
-  I'm a Front-End Web Designer and Developer in Lancaster, PA and Digital
-  Director at <a href="https://infantree.com" target="_blank"
-  rel="noopener">Infantree</a>.
+  I am the Digital Director at <a href="https://infantree.com" target="_blank"
+  rel="noopener">Infantree</a> in Lancaster, PA where we make cool websites for
+  cool clients.
 
 
-  I have a Bachelor’s Degree in Graphic Design, but almost everything I know
-  about builidng webites is self-taught or learned from talented coworkers.
+  I have a Bachelor’s Degree in Graphic Design, but everything I know about
+  building websites is self-taught or learned from talented coworkers.
 ---
-## Things I do
+## I work at the front of front-end development
 
-I call myself a Front-End Designer/Developer because it's a familiar term, but it's also extremely broad.
+I call myself a Front-End Web Designer and Developer. That title probably means something different to each person. When describing myself, I use the term to tell people I plan, design, and develop websites.
 
-Here's 
 
-### Overall Website Strategy
+### Website Research and Strategy
 
-Companies often have challenges or objectives they need help figuring out. I do my best to understand who the company is, what they're selling, who they're selling to, and how they can better represent themselves and their products or services online.
-
-### Research
+Companies have challenges or objectives they need help figuring out—whether they realize it or not. I do my best to understand what the company does, what they're selling, and to who they're selling. I share observations and provide recommendations of how we could build a site that better represents the company.
 
 ### Information Architecture
 
@@ -35,8 +34,7 @@ Companies often have challenges or objectives they need help figuring out. I do 
 
 ### Website Development
 
-* HTML
-* CSS/Scss
+* Foundation in HTML and CSS/Scss
 * Some JS
 * WP flavored PHP 
 * Dev best practices
@@ -46,5 +44,5 @@ Companies often have challenges or objectives they need help figuring out. I do 
 ### Custom WordPress Themes
 
 * Custom themes and templates
-* Plugin dev
+* Plugins and shortcodes
 * Custom blocks
