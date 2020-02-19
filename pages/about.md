@@ -10,35 +10,36 @@ intro_paragraph: >-
 ---
 ## Things I do
 
-* Brand messaging to web 
-* Site goals based on company and marketing goals
-* Information Architecture
-* Content organization, outlines, and hierarchy
-* Wireframes and prototypes
-* Design direction
-* Interface Design
-* Dev
+I call myself a Front-End Designer/Developer because it's a familiar term, but it's also extremely broad.
 
-  * HTML
-  * CSS/Scss
-  * Some JS
-  * WP flavored PHP
-* Wordpress
+Here's 
 
-  * Custom themes and templates
-  * Plugin dev
-  * Custom blocks
+### Overall Website Strategy
+
+Companies often have challenges or objectives they need help figuring out. I do my best to understand who the company is, what they're selling, who they're selling to, and how they can better represent themselves and their products or services online.
+
+### Research
+
+### Information Architecture
+
+### Wireframes and Prototypes
+
+### Design Direction
+
+### Interface Design
+
+### Website Development
+
+* HTML
+* CSS/Scss
+* Some JS
+* WP flavored PHP 
 * Dev best practices
-
   * SEO
-  * A11y
+  * Accessibility
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+### Custom WordPress Themes
 
-## A heading
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Another heading
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Custom themes and templates
+* Plugin dev
+* Custom blocks
