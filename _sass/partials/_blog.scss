@@ -1,5 +1,8 @@
-.post-list {}
+.post-list {
+    padding-bottom: 2em;
+}
 .post-list li {
+    margin: 1.5em 0;
 }
 .post-list__date {
     font-size: .75rem;
