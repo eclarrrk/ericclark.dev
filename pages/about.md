@@ -8,10 +8,6 @@ intro_paragraph: >-
   I am the Digital Director at <a href="https://infantree.com" target="_blank"
   rel="noopener">Infantree</a> in Lancaster, PA where we make cool websites for
   cool clients.
-
-
-  I have a Bachelor’s Degree in Graphic Design, but everything I know about
-  building websites is self-taught or learned from talented coworkers.
 ---
 ## I work at the front of front-end development
 
