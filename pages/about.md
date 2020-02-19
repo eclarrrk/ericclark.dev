@@ -1,12 +1,17 @@
 ---
 layout: page
-title: About Eric
+title: About
+headline: About Eric
 permalink: /about/
 section: about
 intro_paragraph: >-
-  I'm a front-end designer and developer in Lancaster, PA currently working as
-  the Digital Director at <a href="https://infantree.com" target="_blank"
+  I'm a Front-End Web Designer and Developer in Lancaster, PA and Digital
+  Director at <a href="https://infantree.com" target="_blank"
   rel="noopener">Infantree</a>.
+
+
+  I have a Bachelor’s Degree in Graphic Design, but almost everything I know
+  about builidng webites is self-taught or learned from talented coworkers.
 ---
 ## Things I do
 
