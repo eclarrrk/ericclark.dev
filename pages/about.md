@@ -1,44 +1,48 @@
 ---
 layout: page
-title: About Eric
+title: About
+headline: >-
+  I'm a Front-End Web Designer and Developer and I think I'm pretty good at
+  building websites
 permalink: /about/
 section: about
 intro_paragraph: >-
-  I'm a front-end designer and developer in Lancaster, PA currently working as
-  the Digital Director at <a href="https://infantree.com" target="_blank"
-  rel="noopener">Infantree</a>.
+  I am the Digital Director at <a href="https://infantree.com" target="_blank"
+  rel="noopener">Infantree</a> in Lancaster, PA where we make cool websites for
+  cool clients.
+
+
+  I have a Bachelor’s Degree in Graphic Design, but everything I know about
+  building websites is self-taught or learned from talented coworkers.
 ---
-## Things I do
+## I work at the front of front-end development
 
-* Brand messaging to web 
-* Site goals based on company and marketing goals
-* Information Architecture
-* Content organization, outlines, and hierarchy
-* Wireframes and prototypes
-* Design direction
-* Interface Design
-* Dev
+I call myself a Front-End Web Designer and Developer. That title probably means something different to each person. When describing myself, I use the term to tell people I plan, design, and develop websites.
 
-  * HTML
-  * CSS/Scss
-  * Some JS
-  * WP flavored PHP
-* Wordpress
 
-  * Custom themes and templates
-  * Plugin dev
-  * Custom blocks
+### Website Research and Strategy
+
+Companies have challenges or objectives they need help figuring out—whether they realize it or not. I do my best to understand what the company does, what they're selling, and to who they're selling. I share observations and provide recommendations of how we could build a site that better represents the company.
+
+### Information Architecture
+
+### Wireframes and Prototypes
+
+### Design Direction
+
+### Interface Design
+
+### Website Development
+
+* Foundation in HTML and CSS/Scss
+* Some JS
+* WP flavored PHP 
 * Dev best practices
-
   * SEO
-  * A11y
+  * Accessibility
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+### Custom WordPress Themes
 
-## A heading
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Another heading
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Custom themes and templates
+* Plugins and shortcodes
+* Custom blocks
