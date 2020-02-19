@@ -86,21 +86,25 @@ h1,
 h2,
 .h2 {
   @include font-size(1.8, 2.8);
+  padding-top: 1em;
 }
 
 h3,
 .h3 {
   @include font-size(1.5, 2.33);
+  padding-top: 1em;
 }
 
 h4,
 .h4 {
   @include font-size(1.33, 2);
+  padding-top: 1em;
 }
 
 h5,
 .h5 {
   @include font-size(1, 1.15);
+  padding-top: 1em;
   font-family: $font__primary;
   font-weight: $font__weight--bold;
 }
@@ -108,8 +112,16 @@ h5,
 h6,
 .h6 {
   @include font-size(.9, 1);
+  padding-top: 1em;
   font-family: $font__primary;
   font-weight: $font__weight--bold;
+}
+.headline--eyebrow {
+  font-size: 1em;
+  font-family: $font__primary;
+}
+page-headline {
+  padding-top: 0;
 }
 
 code {
