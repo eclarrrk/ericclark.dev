@@ -11,7 +11,7 @@ intro_paragraph: >-
 ---
 ## I work at the front of front-end development
 
-I call myself a Front-End Web Designer and Developer, which probably means something different to each person. When describing myself, I use the term to tell people I plan, design, and develop websites.
+I call myself a Front-End Web Designer and Developer, which means something different to each person that hears it. When describing myself, I use the term to say that I plan, design, and develop websites.
 
 
 ### Website Research and Strategy
