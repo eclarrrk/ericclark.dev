@@ -1,23 +1,17 @@
 ---
 layout: page
 title: About
-headline: >-
-  I'm a Front-End Web Designer and Developer and I think I'm pretty good at
-  building websites
+headline: I'm a Front-End Web Designer and Developer
 permalink: /about/
 section: about
 intro_paragraph: >-
   I am the Digital Director at <a href="https://infantree.com" target="_blank"
   rel="noopener">Infantree</a> in Lancaster, PA where we make cool websites for
   cool clients.
-
-
-  I have a Bachelor’s Degree in Graphic Design, but everything I know about
-  building websites is self-taught or learned from talented coworkers.
 ---
 ## I work at the front of front-end development
 
-I call myself a Front-End Web Designer and Developer. That title probably means something different to each person. When describing myself, I use the term to tell people I plan, design, and develop websites.
+I call myself a Front-End Web Designer and Developer, which means something different to each person that hears it. When describing myself, I use the term to say that I plan, design, and develop websites.
 
 
 ### Website Research and Strategy
