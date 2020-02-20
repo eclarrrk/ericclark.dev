@@ -3,15 +3,11 @@ layout: post
 title: Changing the font size of a headline based on it's length
 author: eric_clark
 date: '2020-02-19 22:41:35'
-intro_paragraph: >-
-  Designing sites that are capable of accommodating client's content is an
-  important, and sometimes tricky, part of building a quality site.
+intro_paragraph: Designing flexible components is an important part of any website.
 ---
 
 
-
-
-"2019 Year in Review"
+Headlines were "2019 Year in Review"
 
 "Verification of Parasitism of Striped Cucumber Beetles and Bacterial Wilt of Cucurbits Using Molecular Analyses"
 
