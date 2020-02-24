@@ -25,33 +25,42 @@ I've collected a few commands that can solve common image resizing problems, or 
 `sips --resampleWidth 1024 *.jpg`
 
 ### Resize an image by max height
+
 `sips --resampleHeight 768 *.jpg`
 
 ### Resize to 1024px wide by 768px tall (`-z` takes height as it's first argument) while ignoring aspect ratio
-`sips -z 768 1024 *.jpg
+
+`sips -z 768 1024 *.jpg`
 
 ### Resize a batch of images to 250px at each image's largest side.
+
 `sips -Z 250 *`
 
 ### Resize only .jpg files in a folder to 500px x 500px and ignores aspect ratio
+
 `sips -z 500 500 *.jpg`
 
 ### Rotate a batch of images 90 degrees clock-wise
+
 `sips -r 90 *`
 
 ### Convert an image from one file format to another
+
 `sips -s format jpeg -s formatOptions 80 "image.tiff" --out "image.jpg"`
 
-So we first grab all RAW files in a folder, then we convert them to jpeg (or any other format), and we output them somewhere else.
+### Using a loop to batch process images
 
-`for i in *.CR2; do sips -s format jpeg $i --out "${i%.*}.jpg"; done`
+For each png file change format to jpeg, use the png's original file name, and save with .jpg extension. 
+
+`for i in *.png; do sips -s format jpeg $i --out "${i%.*}.jpg"; done`
 
 ## More SIPS
 
 For a full list of SIPS commands, enter `sips --help` into your terminal and get a full list of parameters.
 
 Here it is in full:
-```
+
+````
 sips 10.4.4 - scriptable image processing system.
 This tool is used to query or modify raster image files and ColorSync ICC profiles.
 Its functionality can also be used through the "Image Events" AppleScript suite.
@@ -114,3 +123,4 @@ Its functionality can also be used through the "Image Events" AppleScript suite.
 Citations:
  - [hackernoon.com](https://hackernoon.com/save-time-by-transforming-images-in-the-command-line-c63c83e53b17)
 - [coderwall.com](https://coderwall.com/p/ekhe8g/batch-processing-images-on-mac-with-sips)
+````
