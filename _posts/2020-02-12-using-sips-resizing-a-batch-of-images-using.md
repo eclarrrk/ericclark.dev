@@ -4,9 +4,11 @@ title: Using SIPS to batch resize images
 author: eric_clark
 date: '2020-02-11 21:30:49'
 intro_paragraph: >-
-  I can't count the number of times I'm given a bunch of images that are way too
-  large for the web. I could run a PhotoShop action to handle it, but that would
-  require actually opening the slowest program my computer has to offer.
+  I can't count the number of times I'm given a bunch of images that aren't
+  web-ready. Images are often the wrong format, larger than necessary, and even
+  too large to run through image compression software like TinyPNG. I could run
+  a PhotoShop action to handle it, but that would require actually opening the
+  slowest program my computer has to offer.
 ---
 In searching for a better way, I came across SIPS (scriptable image processing system), a MAC command line tool for processing images. I've collected what I was able to find because some of these are extremely helpful.
 
