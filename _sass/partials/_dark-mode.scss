@@ -1,6 +1,4 @@
 // dark mode color values stored in variables.scss
-
-
 .theme-toggle__wrapper {
     display: none;
     align-items: center;
@@ -13,6 +11,7 @@
         display: inline-flex;
     }
 }
+
 .theme-toggle {
     display: inline-block;
     height: 34px;
@@ -65,10 +64,13 @@ input:checked + .theme-toggle__switch:before {
     align-content: stretch;
     font-weight: 700;
     flex: 1;
-    padding-left: 3px;
+    padding: 3px;
     position: relative;
     z-index: 5;
     @include var(color, color__text);
+    path {
+        stroke: var(--color__text);
+    }
 }
 .icon--sun {
     padding-left: 0;
@@ -86,9 +88,9 @@ input:checked + .theme-toggle__switch:before {
 
 html[data-theme="dark"] {
     .theme-toggle__label--dark {display: none;}
-    .theme-toggle__label--light {display: inline
+    .theme-toggle__label--light {display: inline;}
 }
 html[data-theme="light"] {
     .theme-toggle__label--dark {display: inline;}
-    .theme-toggle__label--light {display: none;};}
+    .theme-toggle__label--light {display: none;}
 }
