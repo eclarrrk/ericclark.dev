@@ -1,3 +1,4 @@
+// add anchor links to headings in blog posts
 const headings = document.querySelectorAll('article.article h2, article.article h3, div.gist');
 const linkContent = '#';
 for (const heading of headings) {
