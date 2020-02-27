@@ -147,15 +147,17 @@ time {
 
 a,
 a:visited {
-  text-decoration-style: underline;
-  text-decoration-color: rgba( var(--color__link), .3);
+  text-decoration: underline;
+  text-decoration-color: var(--color__link);
   @include var(color, color__link);
+  text-decoration-thickness: .1em;
 }
 
 a:hover,
 a:active {
-  text-decoration-color: rgba( var(--color__link--hover), 1);
-  @include var(color, color__link--hover);
+  text-decoration-color: var(--color__link--hover);
+  @include var(color, color__link);
+  text-decoration-thickness: .2em;
 }
 .heading-anchor {
   position: absolute;
