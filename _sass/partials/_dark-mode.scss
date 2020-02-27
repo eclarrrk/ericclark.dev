@@ -24,11 +24,13 @@
 
 .theme-toggle__switch {
     // background-color: orange;
-    @include var(background-color, color__primary--ll);
     bottom: 0;
-    cursor: pointer;
     left: 0;
+    padding: 4px;
+    cursor: pointer;
     display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     right: 0;
     top: 0;
@@ -37,7 +39,6 @@
 }
 
 .theme-toggle__switch:before {
-    // background-color: #fff;
     @include var(background-color, color__text);
     bottom: 4px;
     content: '';
@@ -47,7 +48,8 @@
     z-index: 9;
     transition: .4s;
     width: 26px;
-    border-radius: 50%;}
+    border-radius: 50%;
+}
 
 input:checked + .theme-toggle__switch {
     // background-color: $color__secondary;
@@ -59,22 +61,21 @@ input:checked + .theme-toggle__switch:before {
 
 .icon--sun,
 .icon--moon {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-content: stretch;
-    font-weight: 700;
+    align-items: center;
     flex: 1;
-    padding: 3px;
     position: relative;
     z-index: 5;
     @include var(color, color__text);
+    svg {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+    }
     path {
         stroke: var(--color__text);
     }
-}
-.icon--sun {
-    padding-left: 0;
-    padding-right: 3px;
 }
 
 
